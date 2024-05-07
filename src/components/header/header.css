@@ -1,0 +1,185 @@
+.header {
+    background: white;
+    width: 100%;
+    box-shadow: 0px 1px 1px #eee;
+    height: 70px;
+}
+
+.header nav {
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .content {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 567px) {
+    nav .content .logo{
+        display: none;
+    }
+}
+nav .content .links {
+    margin-left: 80px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+nav .content .logo a img {
+    width: 150px;
+}
+
+nav .content .links li {
+    list-style: none;
+    line-height: 70px;
+}
+
+#first {
+    color: var(--main-color);
+}
+
+.content .links li a,
+.content .links li label {
+    color: black;
+    font-size: 18px;
+    padding: 9px 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.content .links li label {
+    display: none;
+}
+
+.content .links li a:hover,
+.content .links li label:hover {
+    color: var(--main-color);
+}
+
+
+.header .menu-icon {
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconContainer{
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+}
+
+.iconContainer i{
+    cursor: pointer;
+    color: #48957C !important;
+}
+
+.headerLoginBtn{
+    background-color: #48957C !important;
+    color: #fff !important
+}
+
+.header .menu-icon {
+    display: none;
+}
+
+.header input[type="checkbox"] {
+    display: none;
+}
+
+/*====== Responsive====== */
+@media screen and (max-width:1250px) {
+    .header nav {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    nav .content .links {
+        margin-left: 30px;
+    }
+
+    .content .links a {
+        padding: 8px 13px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .header .menu-icon {
+        display: block;
+    }
+
+    .header #show-menu:checked~.menu-icon i::before {
+        content: "\f00d";
+    }
+
+    nav .content .links {
+        display: block;
+        position: fixed;
+        background: white;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 350px;
+        overflow: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+        z-index: 10000;
+    }
+
+    nav #show-menu:checked~.content .links {
+        left: 0%;
+    }
+
+    .content .links li {
+        margin: 15px 20px;
+    }
+
+    .content .links li a,
+    .content .links li label {
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+
+    .content .links li a.desktop-link {
+        display: none;
+    }
+}
+
+
+.badge{
+    font-size: 16px !important;
+}
+
+.badge:after{
+    content:attr(value);
+    font-size:10px;
+    color: #fff;
+    background: #ff6666;
+    border-radius:50%;
+    padding: 0 5px;
+    position:relative;
+    left:-8px;
+    top:-10px;
+    opacity:0.9;
+}
+
+.active {
+    color: #48957c !important;
+  }

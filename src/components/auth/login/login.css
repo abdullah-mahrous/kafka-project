@@ -1,0 +1,71 @@
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.login-info {
+    width: 40%;
+}
+
+.login-info h1 {
+    padding-bottom: 1rem;
+}
+
+.login-info p {
+    padding-bottom: 4rem;
+}
+
+.login-info input {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+button {
+    background-color: rgb(217, 70, 72);
+    width: 7rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+.btn p a {
+    color: rgb(217, 70, 72);
+}
+
+@media(max-width:700px){
+    .main-content{
+        flex-direction: column;
+    }
+
+    .image, .login-info{
+        width: 95%;
+    }
+}

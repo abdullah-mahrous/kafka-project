@@ -1,0 +1,129 @@
+.about {
+    padding: 150px 8% 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+@media (max-width: 1199px) {
+    .about {
+        padding: 40px;
+    }
+}
+.about-img {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.about-img::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 5;
+}
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .5s;
+    position: relative;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.about-img:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.about-img:hover::before {
+    animation: flashing .7s;
+    -webkit-animation: flashing .7s;
+}
+
+.about-text h3 {
+    color: #48957C;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #1a352d;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    margin-top: 10px;
+}
+
+
+@media (max-width:920px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img {
+        text-align: center;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.review {
+    padding: 120px 8% 120px;
+    background: white;
+  }
+  
+  .review-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+  }
+  
+  .box {
+    background: #f6f6f6;
+    padding: 35px 45px;
+    height: 50vh;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    text-align: center;
+    height: 300px;
+  }
+  
+  .img img {
+    width: 100px;
+    border-radius: 100px;
+  }
+  
+  .review .star i {
+    color: rgba(255, 153, 0);
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 920px) {
+    .review-content {
+      grid-template-columns: 1fr;
+    }
+  }

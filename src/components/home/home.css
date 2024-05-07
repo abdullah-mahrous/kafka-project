@@ -1,0 +1,258 @@
+.home {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../../images/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.home .main-text {
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text h1 {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0px 0px 1px black;
+}
+
+.home .main-text p {
+  color: #fff;
+  margin-top: 5px;
+  font-weight: 550;
+}
+
+#btn {
+  width: 200px;
+  height: 36px;
+  font-weight: bold;
+  background: white;
+  color: #48957c;
+  letter-spacing: 1px;
+  border: 1px solid #48957c;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.offers {
+  padding: 40px 80px;
+  background: #f3f3f3;
+  margin-top: 100px;
+}
+
+.offer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 30px;
+}
+
+.offer-content .row {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.offer-content .row i {
+  font-size: 50px;
+  color: #48957c;
+}
+
+.offer-content .row h3 {
+  color: #1a352d;
+}
+
+@media (max-width: 920px) {
+  .offer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.product {
+  padding: 100px 40px;
+  margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+  .product {
+    padding: 10px 5px;
+  }
+}
+
+.main-txt {
+  text-align: center;
+}
+
+.main-txt h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #48957c;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.card-content .row {
+  background: #f3f3f3;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 22%;
+  padding: 10px;
+}
+@media (max-width: 1260px) {
+  .card-content .row {
+    flex-basis: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .card-content {
+    gap: 10px;
+  }
+
+  .card-content .row {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.row img {
+  max-width: 100%;
+  display: block;
+  width: 50%;
+  height: 122px;
+  margin: 0 auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 550;
+  height: 50px;
+  color: #48957c;
+}
+
+.card-body p {
+  font-weight: 550;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  height: 75px;
+  color: #232725d8;
+}
+
+.card-body h5 {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #53645d;
+}
+
+.row .cartBtn {
+  display: block;
+  margin: 15px auto;
+  width: 75%;
+  font-weight: 550;
+  background-color: #48957c;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #e2e9e1;
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+
+@media (max-width: 920px) {
+  .card-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h5 {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px black;
+}
+
+.banner-content h3 {
+  color: #f3f3f3;
+  font-size: 38px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px black;
+}
+
+.banner-content p {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px black;
+}
+
+.banner-content button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-content button {
+  width: 160px;
+  height: 36px;
+  margin-top: 10px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.banner-content button:hover {
+  border: none;
+}
+
+
+
+

@@ -1,0 +1,70 @@
+{
+    "returnObject": [
+        {
+            "Id": 1,
+            "Title": "Comfortable Armchair",
+            "Description": "Sink into the plush cushions of this armchair design.",
+            "price": 249.99
+        },
+        {
+            "Id": 2,
+            "Title": "L-Shaped Sectional Sofa",
+            "Description": "Create a cozy and inviting living space with this sectional sofa.",
+            "price": 899.99
+        },
+        {
+            "Id": 3,
+            "Title": "Modern Dining Chair",
+            "Description": "Add a touch of elegance to your dining area with these chairs.",
+            "price": 89.99
+        },
+        {
+            "Id": 4,
+            "Title": "King Size Upholstered Bed",
+            "Description": "Transform your bedroom into a luxurious retreat with bed.",
+            "price": 599.99
+        },
+        {
+            "Id": 5,
+            "Title": "Leather Reclining Sofa",
+            "Description": "Experience the ultimate in comfort sofa.",
+            "price": 1199.99
+        },
+        {
+            "Id": 6,
+            "Title": "Rustic Coffee Table",
+            "Description": "Add a touch to your living room with this coffee table.",
+            "price": 149.99
+        },
+        {
+            "Id": 7,
+            "Title": "Vintage Wooden Chair",
+            "Description": "Bring a rustic charm to your space with these vintage chairs.",
+            "price": 149.99
+        },
+        {
+            "Id": 8,
+            "Title": "Queen Size Platform Bed",
+            "Description": "Achieve a modern look with this platform bed.",
+            "price": 399.99
+        },
+        {
+            "Id": 9,
+            "Title": "Extendable Dining Table",
+            "Description": "Host gatherings with this versatile dining table.",
+            "price": 349.99
+        },
+        {
+            "Id": 10,
+            "Title": "Convertible Sleeper Sofa",
+            "Description": "Maximize your space with this comfortable sofa.",
+            "price": 799.99
+        }
+    ],
+    "product": {
+        "Id": 1,
+        "Title": "Comfortable Armchair",
+        "Description": "Sink into the plush cushions of this armchair design.",
+        "price": 249.99
+    }
+}

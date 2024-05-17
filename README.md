@@ -7,6 +7,6 @@ E-Commerce website with kafka implementation
 
 * open the the project dir and run the following command: node install (to install the project dependencies)
 
-* then run the project by this command: node start
+* then run the project by this command: npm start
 
 * then assign your base url (local host name of your back-end project) to the REACT_APP_API_KEY variable in the .env file
